@@ -1,0 +1,67 @@
+.elem {
+    width:40%;
+    height:6%;
+    border-radius: 6px;
+    border-width: 1px;
+    margin-top: 3.5%; 
+}
+
+
+.show {
+    height:4%;
+    margin-left:-50px;
+    background-color:white;
+    border-width:0px;
+}
+
+.show:hover {
+    color:blue;
+    cursor: pointer;
+}
+
+span {
+    width:2%;
+    margin-top:-10px;
+    display: inline-block;
+}
+
+.msg {
+    width: 40%;
+    margin-top:5px;
+    color:red;
+    margin-bottom:-10px;
+    text-align:left;
+}
+
+hr {
+    display: inline-block;
+    width: 18%;
+    margin-top: 1.2%;
+}
+
+h1 {
+    font-size:200%;
+}
+
+.go:hover {
+    cursor:pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .elem {
+        width:80%;
+        margin-top: 5%;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    hr {
+        width: 37%;
+        margin-top: 3%;
+    }
+    span {
+        width: 6%;
+    }
+}

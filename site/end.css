@@ -1,0 +1,14 @@
+.scores {
+       font-size:200%;
+       margin:5px; 
+}
+
+center {
+        margin-top: 50%;
+}
+
+#again {
+        border-radius:8px;
+        border-width:0px;
+        background-color: #38db38;
+}

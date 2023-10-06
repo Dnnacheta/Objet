@@ -1,0 +1,113 @@
+body {
+
+}
+
+#home {
+        align-content:center;
+}
+
+.main {
+        Width:600px;
+        height:70px;
+        border-radius:15px;
+        background-color:#2fe745;
+        border-width:0px;
+        font-size:40;
+        font-weight:bolder;
+        color:white;
+        margin-top:50px;
+}
+
+#accs {
+      width:30px;
+      position:fixed;
+      top:0px;
+      left:0px;
+      height:30px
+}
+
+.hr {
+        display:inline-block;
+        width:30px;
+        height:3px;
+        background-color:gray;
+        border-radius:2px;
+        margin-bottom:10px;
+}
+
+#hr0 {
+        animation-duration:0.2s;
+        animation-iteration-count:1;
+        animation-timing-function:linear;
+}
+
+#hr1 {
+        animation-duration:0.2s;
+        animation-iteration-count:1;
+        animation-timing-function:linear;
+}
+
+#hr2 {
+        animation-duration:0.2s;
+        animation-iteration-count:1;
+        animation-timing-function:linear;
+        position:fixed;
+}
+
+@keyframes x0{
+        from{transform:rotateZ(0deg);}
+        to{transform:rotateZ(45deg);}
+        from{width:30px;}
+        to{width:42.4264068px;}
+        from{top:0px;}
+        to{top:15px;}
+        from{left:0px;}
+        to{left:-5px;}
+        from{position:relative;}
+        to{position:fixed;}
+}
+
+@keyframes x1{
+        from{opacity:1;}
+        to{opacity:0;}
+}
+
+@keyframes x2{
+        from{transform:rotateZ(0deg);}
+        to{transform:rotateZ(-45deg);}
+        from{width:30px;}
+        to{width:42.4264068px;}
+        from{top:0px;}
+        to{top:15px;}
+        from{left:0px;}
+        to{left:-5px;}
+}
+
+@keyframes y0 {
+        from{transform:rotateZ(45deg);}
+        to{transform:rotateZ(0deg);}
+        from{width:42.4264068px;}
+        to{width:30px;}
+        from{top:15px;}
+        to{top:0px;}
+        from{left:-5px;}
+        to{left:0px;}
+        from{position:fixed;}
+        to{position:relative;}
+}
+
+@keyframes y1 {
+        from{opacity:0;}
+        to{opacity:1;}
+}
+
+@keyframes y2{
+        from{transform:rotateZ(-45deg);}
+        to{transform:rotateZ(0deg);}
+        from{width:42.4264068px;}
+        to{width:30px;}
+        from{top:15px;}
+        to{top:0px;}
+        from{left:-5px;}
+        to{left:0px;}
+}

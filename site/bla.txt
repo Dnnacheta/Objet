@@ -1,0 +1,39 @@
+// Create a canvas element
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+// Set the canvas size
+canvas.width = 500;
+canvas.height = 500;
+
+// Define the cloud shapes
+const cloudShapes = [
+  // Puffy cloud
+  'm.beginPath(); m.moveTo(100, 100); m.quadraticCurveTo(150, 150, 200, 100); quadraticCurveTo(250, 50, 300, 100); quadraticCurveTo(350, 150, 400, 100); quadraticCurveTo(450, 50, 500, 100); closePath();',
+
+  // Wispy cloud
+  'm.beginPath(); m.moveTo(100, 100); m.lineTo(150, 150); m.lineTo(200, 100); m.lineTo(250, 50); m.lineTo(300, 100); m.lineTo(350, 150); m.lineTo(400, 100); m.lineTo(450, 50); lineTo(500, 100); closePath();',
+
+  // Heart cloud
+  'm.beginPath(); m.moveTo(250, 100); m.quadraticCurveTo(300, 150, 250, 200); m.quadraticCurveTo(200, 150, 250, 100); m.closePath();',
+
+  // Star cloud
+  'm.beginPath(); m.moveTo(250, 100); m.lineTo(300, 150); m.lineTo(250, 200); m.lineTo(200, 150); m.lineTo(250, 100); m.lineTo(350, 150); m.lineTo(250, 200); m.lineTo(150, 150); m.lineTo(250, 100); m.closePath();',
+
+  // Moon cloud
+  'm.beginPath(); m.moveTo(250, 100); m.arc(250, 100, 50, 0, Math.PI * 2, true); m.closePath();',
+];
+
+// Draw the cloud shapes
+for (let i = 0; i < 5; i++) {
+  // Choose a random cloud shape
+  const cloudShape = cloudShapes[Math.floor(Math.random() * cloudShapes.length)];
+
+  // Choose a random cloud position
+  const cloudX = Math.random() * canvas.width;
+  const cloudY = Math.random() * canvas.height;
+
+  // Draw the cloud shape
+  ctx.fillStyle = '#ffffff';
+  ctx.fill(eval(cloudShape));
+}
